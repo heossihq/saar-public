@@ -2,8 +2,10 @@
   "servers": {
     "saar": {
       "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@heossihq/saar-mcp"],
+      "command": "node",
+      "args": [
+        "/opt/saar/mcp/dist/index.js"
+      ],
       "env": {
         "SAAR_NATIVE_BINARY": "/usr/local/bin/saar_native",
         "SAAR_ALLOWED_ROOTS": "/Users/me/data"

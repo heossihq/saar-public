@@ -2,7 +2,10 @@
   "mcp": {
     "saar": {
       "type": "local",
-      "command": ["npx", "-y", "@heossihq/saar-mcp"],
+      "command": [
+        "node",
+        "/opt/saar/mcp/dist/index.js"
+      ],
       "environment": {
         "SAAR_NATIVE_BINARY": "/usr/local/bin/saar_native",
         "SAAR_ALLOWED_ROOTS": "/Users/me/data"

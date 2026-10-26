@@ -21,6 +21,8 @@ The public workload-class matrix and dated measurements live with the product do
 
 `@heossihq/saar-mcp` exposes Saar through the Model Context Protocol. It is a thin server: it does **not** contain the compressor, it drives an installed Saar native CLI.
 
+The server ships with the licensed Saar distribution. It is **not yet on the public npm registry**, so client configuration points at the installed package rather than at `npx`.
+
 | Tool | Purpose |
 | --- | --- |
 | `saar_compress_file` | Compress a file through the installed native CLI |
