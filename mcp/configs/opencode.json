@@ -1,0 +1,12 @@
+{
+  "mcp": {
+    "saar": {
+      "type": "local",
+      "command": ["npx", "-y", "@heossihq/saar-mcp"],
+      "environment": {
+        "SAAR_NATIVE_BINARY": "/usr/local/bin/saar_native",
+        "SAAR_ALLOWED_ROOTS": "/Users/me/data"
+      }
+    }
+  }
+}
