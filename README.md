@@ -1,3 +1,5 @@
+<p align="center"><img src="./assets/saar-banner.png" alt="Saar: lossless compression engine" width="680"></p>
+
 # Saar
 
 **Content-aware lossless compression, delivered as an embeddable engine.**
