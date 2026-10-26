@@ -71,6 +71,14 @@ engine, the CLI, the container and stream formats, and the methods described in
 Saar research publications remain proprietary, and nothing in the Apache licence
 grants rights to them.
 
+## Editor and agent surfaces
+
+| Surface | Where |
+| --- | --- |
+| VS Code extension | [`extensions/vscode`](./extensions/vscode), installed from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=heossi.saar). Source is not published. |
+| MCP server | [`mcp`](./mcp), configuration for Claude Desktop, Cursor, OpenCode and VS Code. |
+| Brand assets | [`assets`](./assets). |
+
 ## Assets
 
 Brand assets for listings and documentation: [`assets/saar-logo.png`](./assets/saar-logo.png)
