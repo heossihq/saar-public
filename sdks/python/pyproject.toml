@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "saar-sdk"
+version = "1.3.0"
+description = "Thin Python client over the Saar command-line interface"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "HEOSSI (Pte.) Ltd." }]
+keywords = ["compression", "lossless", "saar"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://saar.heossi.com"
+Repository = "https://github.com/heossihq/saar-public"
+Documentation = "https://saar.heossi.com/developers"
+
+[tool.setuptools.packages.find]
+include = ["saar_sdk*"]
+
+[tool.setuptools.package-data]
+saar_sdk = ["py.typed"]
+

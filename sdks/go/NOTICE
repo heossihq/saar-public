@@ -1,0 +1,17 @@
+Saar SDKs
+Copyright 2026 HEOSSI (PTE.) LTD, Singapore
+
+This NOTICE applies to the client libraries under sdks/ and to the MCP server
+in packages/mcp-server.
+
+Those components are licensed under the Apache License, Version 2.0. They are
+integration layers only: each SDK invokes the installed Saar command-line
+interface as a subprocess and decodes the JSON it prints, and the MCP server
+spawns that same CLI. None of them contains, links or reproduces the Saar
+codec.
+
+The Saar engine, command-line interface, container and stream formats, and the
+methods described in Saar research publications remain proprietary software of
+HEOSSI (PTE.) LTD and are licensed separately. Nothing in the Apache License
+grants any right to the engine, to its file formats, or to any patent or trade
+secret of HEOSSI.

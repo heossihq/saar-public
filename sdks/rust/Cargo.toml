@@ -1,0 +1,14 @@
+[package]
+name = "saar-sdk"
+version = "1.3.0"
+edition = "2021"
+rust-version = "1.77"
+description = "Thin Rust client over the Saar command-line interface"
+license = "Apache-2.0"
+readme = "README.md"
+include = ["src/**", "tests/**", "LICENSE", "NOTICE", "README.md"]
+homepage = "https://saar.heossi.com"
+repository = "https://github.com/heossihq/saar-public"
+documentation = "https://saar.heossi.com/developers"
+
+[dependencies]

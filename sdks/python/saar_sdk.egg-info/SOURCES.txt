@@ -1,0 +1,13 @@
+LICENSE
+NOTICE
+README.md
+pyproject.toml
+saar_sdk/__init__.py
+saar_sdk/client.py
+saar_sdk/errors.py
+saar_sdk/py.typed
+saar_sdk.egg-info/PKG-INFO
+saar_sdk.egg-info/SOURCES.txt
+saar_sdk.egg-info/dependency_links.txt
+saar_sdk.egg-info/top_level.txt
+tests/test_client.py

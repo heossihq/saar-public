@@ -45,6 +45,37 @@ Without a licence the server runs in evaluation mode and reports that state thro
 
 Client configuration templates are in [`mcp/configs`](./mcp/configs).
 
+## SDKs
+
+Client libraries for six languages live in [`sdks/`](./sdks). Each one invokes the
+installed `saar_native` executable and reads the JSON it prints; none of them
+contains, links or reproduces the codec. They are integration layers, and they are
+licensed separately from the engine.
+
+| Language | Install | Directory |
+| --- | --- | --- |
+| Python | `pip install saar-sdk` | [`sdks/python`](./sdks/python) |
+| Rust | `cargo add saar-sdk` | [`sdks/rust`](./sdks/rust) |
+| .NET | `dotnet add package Heossi.Saar` | [`sdks/dotnet`](./sdks/dotnet) |
+| JVM | `com.heossi:saar-sdk` (Maven Central, pending namespace verification) | [`sdks/jvm`](./sdks/jvm) |
+| Go | `go get github.com/heossihq/saar-public/sdks/go` | [`sdks/go`](./sdks/go) |
+| Swift | `.package(url: "https://github.com/heossihq/saar-public.git", from: "1.3.0")` | [`sdks/swift`](./sdks/swift) |
+
+Go and Swift resolve from this repository directly, which is why the sources are
+here. Swift Package Manager needs the manifest at the repository root, so
+[`Package.swift`](./Package.swift) points into `sdks/swift`.
+
+**Licence boundary.** The client libraries in `sdks/` are Apache-2.0: see
+[`sdks/LICENSE`](./sdks/LICENSE) and [`sdks/NOTICE`](./sdks/NOTICE). The Saar
+engine, the CLI, the container and stream formats, and the methods described in
+Saar research publications remain proprietary, and nothing in the Apache licence
+grants rights to them.
+
+## Assets
+
+Brand assets for listings and documentation: [`assets/saar-logo.png`](./assets/saar-logo.png)
+and [`assets/saar-icon.png`](./assets/saar-icon.png).
+
 ## Licensing
 
 Five NIST-tiered local licences — Personal, Developer, Business, Enterprise and Government — are issued through the [portal](https://portal.saar.heossi.com) as QNSI-signed tokens. SDK and OEM licensing is arranged separately.
